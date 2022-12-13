@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<h1>Listado de Razas</h1>
+{% endblock %}
+
+{% block content %}
+{% for tipo in raza %}
+<p>{{ tipo }}</p>
+{% endfor %}
+{% endblock %}
