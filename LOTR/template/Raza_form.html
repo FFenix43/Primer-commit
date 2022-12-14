@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<h1>Agregar Raza</h1>
+{% endblock %}
+
+{% block content %}
+<form action="{% url  'raza-form' %}" method="post"> {% csrf_token %}
+    {{ form.as_div }}
+
+    <input type="submit" value="Guardar" class="btn btn-success">
+</form> 
+{% endblock %}

@@ -9,4 +9,4 @@ class Raza(models.Model):
     historia=models.URLField()
 
     def __str__(self) -> str:
-        return f"{self.raza+' '+self.nombre_de_personaje} ({self.espectativa_de_vida+' '+'años'})"
+        return self.raza+" "+self.nombre_de_personaje+" "+str(self.espectativa_de_vida)+" años"

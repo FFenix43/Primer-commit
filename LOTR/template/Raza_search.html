@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+<h1>Busqueda de Razas</h1>
+{% endblock %}
+
+{% block content %}
+<form action="{% url 'raza-index' %}" method="get">
+    <input type="text" name="raza">
+    <input type="submit" value="Buscar Raza" class="btn btn-primary">
+</form>
+{% endblock %}

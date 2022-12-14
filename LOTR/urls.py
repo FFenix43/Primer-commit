@@ -19,5 +19,7 @@ from LOTR import views
 
 urlpatterns = [
 
-    path("admin/", admin.site.urls)
+    path("", views.razas_index, name="raza-index"),
+    path("new", views.new_raza, name="raza-form"),
+    path("search", views.search_raza, name="raza-search"),
 ]

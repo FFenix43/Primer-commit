@@ -1,11 +1,11 @@
 from django.contrib import admin 
-from django.urls import path
+from django.urls import path, include
 from LOTR import views
 
 urlpatterns = [
 
-    path("", views.razas_index, name="raza-index")
+    path("admin/", admin.site.urls),
+    path("LOTR/", include("LOTR.urls"))
 ]
-
 
 
